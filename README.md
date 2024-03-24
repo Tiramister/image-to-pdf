@@ -1,15 +1,17 @@
 ## 必要なもの
 
-- [ImageMagick](https://imagemagick.org/index.php): 画像ファイルを PDF に変換する
-- [Ghostscript](https://www.ghostscript.com/): PDF の画質を下げる
+- [ImageMagick](https://imagemagick.org/index.php)
 
 ```shell
-brew install imagemagick ghostscript
+brew install imagemagick
 ```
 
 ## 使い方
 
+### img-to-pdf
+
 PDF にまとめたい画像が入ったディレクトリ、が入ったディレクトリを指定する。
+なお拡張子が `png`、`jpg`、`jpeg` のファイルが変換対象となる。
 
 ```shell
 $ tree parent_dir
@@ -57,4 +59,8 @@ parent_dir
 │   └── 04.jpeg
 └── images3.pdf <-- new
 ```
+
+### pdf-to-img
+
+img-to-pdf の逆をする。jpeg 形式の画像を生成する。
 
